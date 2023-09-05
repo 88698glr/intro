@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+}
+
+
+/* Korte introductie */
+
+.back-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: url(../images/achtergrond.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.back-image::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.back-content {
+    position: relative;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.back-content-inner h1{
+    font-size: 30px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 100px;
+}
+
+.back-content-inner p {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 22px;
+}
+
+.back-content-inner button {
+    width: 170px;
+    height: 50px;
+    margin-top: 40px;
+    margin-left: 100px;
+    border-radius: 0px;
+    outline: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: #fc5f00;
+    color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    border: 2px solid transparent;
+    transition: all ease .2s;
+}
+
+.back-content-inner button :hover {
+    border-color: #fff;
+    color: #fff;
+    background: transparent;
+}
+
+.foto-ik {
+    width: 25%;
+    position: relative;
+    top: -50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+}
+
+@media (max-width: 600px) {
+    .back-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .back-content-inner h1 {
+        font-size: 30px;
+        margin-right: 90px;
+    }
+
+    .back-content-inner button {
+        margin-right: 90px;
+    }
+
+    .foto-ik {
+        width: 30%;
+    }
+}
+
+/* Projecten */
+.background {
+    height: 100vh;
+    text-align: center;
+    background-color: rgb(255, 145, 145);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.background-content-inner img {
+    max-width: 300px;
+}
+
+.background-content-inner h1{
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 30px;
+    padding-top: 50px;
+}
+
+.background-content-inner p {
+    width: 75%;
+    margin: 0 auto;
+    font-size: 20px;
+    font-weight: normal;
+    color: #fff;
+    line-height: 22px;
+    margin-bottom: 30px;
+}
+
+.background-content-inner button {
+    width: 170px;
+    height: 50px;
+    margin-top: 30px;
+    border-radius: 0px;
+    outline: none;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: #fc5f00;
+    color: #fff;
+    box-shadow: 0 0 30px rgba(0, 0, 0, .3);
+    border: 2px solid transparent;
+    transition: all ease .2s;
+}
+
+.background-content-inner button:hover {
+    border-color: #fff;
+    color: #fff;
+    background: transparent;
+}
+
+.background-content-inner .con-fotos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+
+@media (max-width: 600px) {
+    .background-content-inner p{
+        width: 100%;
+        font-size: 13px;
+    }
+
+    .background-content-inner h1{
+        font-size: 30px;
+ 
+    }
+}
+
