@@ -310,3 +310,34 @@
         margin-top: 20px;
     }
 }
+
+/* CV */
+.container-cv {
+    width: 100%;
+    min-height: 30vh;
+    text-align: center;
+    background-color: lightgray;
+}
+
+.cv h2 {
+    font-size: 30px;
+    padding: 30px
+}
+
+.cv a {
+    text-decoration: none;
+    color: black;
+    border: 2px solid none;
+    background-color: #d03645;
+    padding: 10px;
+}
+
+.cv a:hover {
+    background-color: blue;
+}
+
+@media (max-width: 600px) {
+    .container-cv {
+        padding: 30px 8%;
+    }
+}

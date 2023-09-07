@@ -29,7 +29,7 @@
                     <a href="../pages/about.html">About me</a>
                 </li>
                 <li>
-                    <a href="#Projects">Projects</a>
+                    <a href="../pages/projects.html">Projects</a>
                 </li>
                 <li>
                     <a href="contact.php">Contact</a>
@@ -49,6 +49,7 @@
             $mailHeaders = "Name: " . $userName .
             "\r\n Email: " . $userEmail .
             "\r\n Phone: " . $userPhone .
+            "\r\n Company: " . $userCompany .
             "\r\n Message: " . $userMessage . "\r\n";
 
             if(mail($toEmail, $userName, $mailHeaders)){
@@ -66,11 +67,11 @@
                 </div>
                 <div class="input-row">
                     <label>Email <em>*</em></label>
-                    <input type="text" name="userEmail" required>
+                    <input type="email" name="userEmail" required>
                 </div>
                 <div class="input-row">
                     <label>Telefoonnummer <em>*</em></label>
-                    <input type="text" name="userPhone" required>
+                    <input type="text" name="userPhone" oninput="validatePhoneNumber(this)" pattern="[0-9]{10}" required>
                 </div>
                 <div class="input-row">
                     <label>Bedrijf <em>*</em></label>
@@ -119,5 +120,7 @@
             </p>
         </ul>
     </section>
+
+    <script src="../scripts/contact.js"></script>
 </body>
 </html>
