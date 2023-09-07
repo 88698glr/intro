@@ -38,7 +38,7 @@ input[type="checkbox"] {
     -webkit-appearance: none;
 }
 
-label {
+.hamburger {
     display: none;
     cursor: pointer;
 }
@@ -64,7 +64,7 @@ label {
 }
 
 @media screen and (max-width: 600px) {
-    label {
+    .hamburger {
         display: block;
     }
 
