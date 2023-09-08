@@ -23,16 +23,16 @@
             </label>
             <ul class="navbar">
                 <li>
-                    <a href="../index.html" class="active">Home</a>
+                    <a href="../index.html" class="btn">Home</a>
                 </li>
                 <li>
-                    <a href="../pages/about.html">About me</a>
+                    <a href="../pages/about.html" class="btn">About me</a>
                 </li>
                 <li>
-                    <a href="../pages/projects.php">Projects</a>
+                    <a href="../pages/projects.php" class="btn">Projects</a>
                 </li>
                 <li>
-                    <a href="contact.php">Contact</a>
+                    <a href="contact.php" class="btn active">Contact</a>
                 </li>
             </ul>
         </nav>
@@ -63,23 +63,23 @@
             <form method="post" name="emailContact">
                 <div class="input-row">
                     <label>Name <em>*</em></label>
-                    <input type="text" name="userName" required>
+                    <input type="text" name="userName" placeholder="Naam" required>
                 </div>
                 <div class="input-row">
                     <label>Email <em>*</em></label>
-                    <input type="email" name="userEmail" required>
+                    <input type="email" name="userEmail" placeholder="example@gmail.com" required>
                 </div>
                 <div class="input-row">
                     <label>Telefoonnummer <em>*</em></label>
-                    <input type="text" name="userPhone" oninput="validatePhoneNumber(this)" pattern="[0-9]{10}" required>
+                    <input type="text" name="userPhone" oninput="validatePhoneNumber(this)" pattern="[0-9]{10}" placeholder="0612345678" required>
                 </div>
                 <div class="input-row">
                     <label>Bedrijf <em>*</em></label>
-                    <input type="text" name="userCompany" required>
+                    <input type="text" name="userCompany" placeholder="Example bv" required>
                 </div>
                 <div class="input-row">
                     <label>Message <em>*</em></label>
-                    <textarea name="userMessage" required></textarea>
+                    <textarea name="userMessage" placeholder="Hi, ask or say something" required></textarea>
                 </div>
                 <div class="input-row">
                     <input type="submit" name="send" value="Submit">
@@ -92,14 +92,13 @@
             </form>
         </div>
 
-
          <!-- Footer -->
    <section class="footer">
         <div class="social">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fa-regular fa-envelope"></i></a>
+            <a href="https://www.instagram.com/maarten_sdm/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100009515333629" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="tel:0657338305"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto: 088698@glr.nl"><i class="fa-regular fa-envelope"></i></a>
         </div>
 
         <ul class="list">
@@ -116,7 +115,7 @@
                 <a href="contact.php">Contact</a>
             </li>
             <p class="copyright">
-                Maarten van der Steeg @ 2023
+                Maarten van der Steeg © 2023
             </p>
         </ul>
     </section>

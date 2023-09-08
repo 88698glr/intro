@@ -7,7 +7,7 @@
 
 /* Projects */
 .projects {
-    background-color: #f7f7f7;
+    background-color: #e8e8e8;
     padding: 50px 0;
     min-height: 100vh;
 }
@@ -19,6 +19,7 @@
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
+    color: #2D292A;
 }
 
 .project {
@@ -50,7 +51,7 @@
     display: inline-block;
     margin-top: 10px;
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #B02F2F;
     color: white;
     text-decoration: none;
     border-radius: 3px;
@@ -58,7 +59,7 @@
 }
 
 .project a:hover {
-    background-color: #0056b3;
+    background-color: #B02F2F;
 }
 
 @media (max-width: 768px) {

@@ -12,9 +12,7 @@
     width: 100%;
     height: auto;
     text-align: center;
-    background: url(../images/8.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: #e8e8e8;
 }
 
 .back-image::before {
@@ -24,7 +22,6 @@
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .5)
 }
 
 .back-content {
@@ -39,7 +36,7 @@
 
 .back-content-inner h1{
     font-size: 30px;
-    color: #fff;
+    color: #2D292A;
     margin-bottom: 50px;
     margin-left: 100px;
 }
@@ -49,7 +46,7 @@
     margin: 0 auto;
     font-size: 16px;
     font-weight: normal;
-    color: #fff;
+    color: #2D292A;
     line-height: 22px;
 }
 
@@ -58,7 +55,7 @@
     position: relative;
     top: -50px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid #2D292A;
     box-shadow: 0 0 30px rgba(0, 0, 0, .3);
 }
 
@@ -83,13 +80,12 @@
 .info {
     width: 100%;
     min-height: 90vh;
-    background-color: lightblue;
 }
 
 .container-info {
     width: 100%;
     min-height: 90vh;
-    background-color: #dfdfdf;
+    background-color: #e8e8e8;
 }
 
 .container-info .txt-info {
@@ -101,7 +97,7 @@
 .container-info .txt-info h1 {
     position: relative;
     font-size: 40px;
-    color: #242223;
+    color: #2D292A;
     margin-top: 30px;
     display: inline-block;
 }
@@ -120,7 +116,7 @@
 
 .row-info .txt-sub h2 {
     position: relative;
-    color: #242223;
+    color: #2D292A;
     font-size: 22px;
     display: inline-block;
     margin-bottom: 30px;
@@ -152,7 +148,7 @@
 .skills {
     width: 100%;
     min-height: 100vh;
-    background-color: #ffffff;
+    background-color: #e8e8e8;
 }
 
 .container {
@@ -170,7 +166,7 @@
 .container .txt-skills h1 {
     position: relative;
     font-size: 40px;
-    color: #242223;
+    color: #2D292A;
     margin-bottom: 30px;
     display: inline-block;
 }
@@ -190,7 +186,7 @@
     position: absolute;
     width: 50%;
     height: 4px;
-    background-color: #d03645;
+    background-color: #B02F2F;
     top: calc(125% - 1px);
     left: 50%;
     transform: translateX(-50%);
@@ -209,7 +205,7 @@
 
 .row .txt-sub h2 {
     position: relative;
-    color: #242223;
+    color: #2D292A;
     font-size: 22px;
     display: inline-block;
     margin-bottom: 30px;
@@ -232,15 +228,16 @@
     height: 4px;
     top: calc(125% - 1px);
     left: 0;
-    background-color: #d03645;
+    background-color: #B02F2F;
 }
 
 .subject {
     font-size: 18px;
     font-weight: thin;
-    color: #808080; 
+    color: #2D292A; 
     padding-bottom: 15px;
     text-transform: uppercase;
+    font-weight: bold;
 }
 
 .progress-bar {
@@ -257,15 +254,16 @@
     content: attr(value);
     top: -35px;
     right: 0;
-    color: #808080;
+    color: #2D292A;
     font-size: 18px;
+    font-weight: bold;
 }
 
 .progress-line {
     position: absolute;
     width: 0%;
     height: 7px;
-    background-color: #d03645;
+    background-color: #B02F2F;
     border-radius: 15px;
     top: -1px;
     animation: animatie 1.5s cubic-bezier(1, 0.2, 0.2, 1) forwards;
@@ -286,7 +284,7 @@
     top: 50%;
     left: 100%;
     transform: translate(-50%, -50%);
-    background-color: #d03645;
+    background-color: #B02F2F;
 }
 
 @media (max-width: 600px) {
@@ -316,7 +314,7 @@
     width: 100%;
     min-height: 30vh;
     text-align: center;
-    background-color: lightgray;
+    background-color: #e8e8e8;
 }
 
 .cv h2 {
@@ -326,14 +324,15 @@
 
 .cv a {
     text-decoration: none;
-    color: black;
+    color: #F5F5F5;
     border: 2px solid none;
-    background-color: #d03645;
+    background-color: #B02F2F;
     padding: 10px;
 }
 
 .cv a:hover {
-    background-color: blue;
+    border-color:  #2D292A;
+    color:  #2D292A;
 }
 
 @media (max-width: 600px) {

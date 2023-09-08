@@ -1,5 +1,4 @@
 <?php
-// Databaseverbinding
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -7,12 +6,10 @@ $dbname = "Intro_88698";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
-// Controleer de verbinding
 if ($conn->connect_error) {
     die("Fout bij de verbinding met de database: " . $conn->connect_error);
 }
 
-// Query om projectgegevens op te halen
 $sql = "SELECT * FROM projecten";
 $result = $conn->query($sql);
 ?>
@@ -41,16 +38,16 @@ $result = $conn->query($sql);
                 </label>
                 <ul class="navbar">
                     <li>
-                        <a href="../index.html" class="active">Home</a>
+                        <a href="../index.html" class="btn">Home</a>
                     </li>
                     <li>
-                        <a href="about.html">About me</a>
+                        <a href="about.html" class="btn">About me</a>
                     </li>
                     <li>
-                        <a href="projects.html">Projects</a>
+                        <a href="projects.html" class="btn active">Projects</a>
                     </li>
                     <li>
-                        <a href="./contact.php">Contact</a>
+                        <a href="./contact.php" class="btn">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -59,14 +56,14 @@ $result = $conn->query($sql);
             <section class="projects">
                 <div class="container-projects">
                 <?php
-            // Loop door de projectgegevens en toon ze op de pagina
+            
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     echo '<div class="project">';
                     echo '<img src="' . $row["img"] . '" alt="' . $row["titel"] . '">';
                     echo '<h2>' . $row["titel"] . '</h2>';
                     echo '<p>' . $row["beschrijving"] . '</p>';
-                    echo '<a href="' . $row["link"] . '">Bezoeken</a>';
+                    echo '<a href="' . $row["link"] . '" target="_blank" >Bezoeken</a>';
                     echo '</div>';
                 }
             } else {
@@ -79,10 +76,10 @@ $result = $conn->query($sql);
                      <!-- Footer -->
    <section class="footer">
     <div class="social">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
-        <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fa-regular fa-envelope"></i></a>
+    <a href="https://www.instagram.com/maarten_sdm/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100009515333629" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="tel:0657338305"><i class="fa-solid fa-phone"></i></a>
+            <a href="mailto: 088698@glr.nl"><i class="fa-regular fa-envelope"></i></a>
     </div>
 
     <ul class="list">
@@ -99,7 +96,7 @@ $result = $conn->query($sql);
             <a href="./contact.php">Contact</a>
         </li>
         <p class="copyright">
-            Maarten van der Steeg @ 2023
+            Maarten van der Steeg © 2023
         </p>
     </ul>
 </section>

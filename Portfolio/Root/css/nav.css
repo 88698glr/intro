@@ -63,6 +63,10 @@ input[type="checkbox"] {
     border-bottom: 2px solid #ffffff;
 }
 
+.btn {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 600px) {
     .hamburger {
         display: block;
