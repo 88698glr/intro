@@ -29,7 +29,7 @@
                     <a href="../pages/about.html">About me</a>
                 </li>
                 <li>
-                    <a href="../pages/projects.html">Projects</a>
+                    <a href="../pages/projects.php">Projects</a>
                 </li>
                 <li>
                     <a href="contact.php">Contact</a>
@@ -110,7 +110,7 @@
                 <a href="../pages/about.html">About Me</a>
             </li>
             <li>
-                <a href="#">Projects</a>
+                <a href="./projects.php">Projects</a>
             </li>
             <li>
                 <a href="contact.php">Contact</a>

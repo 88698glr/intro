@@ -70,4 +70,8 @@
     .list {
       font-size: 13px !important;
     }
+
+    .footer {
+        padding: 30px 0;
+    }
 }
