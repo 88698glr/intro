@@ -173,5 +173,8 @@
         font-size: 30px;
  
     }
-}
 
+    .background {
+        height: 130vh;
+    }
+}

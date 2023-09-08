@@ -1,7 +1,11 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+
 $servername = "localhost";
-$username = "root";
-$password = "";
+$username = "88698glr";
+$password = "BurgKnap184a";
 $dbname = "Intro_88698";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -12,10 +16,11 @@ if ($conn->connect_error) {
 
 $sql = "SELECT * FROM projecten";
 $result = $conn->query($sql);
+
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -41,13 +46,13 @@ $result = $conn->query($sql);
                         <a href="../index.html" class="btn">Home</a>
                     </li>
                     <li>
-                        <a href="about.html" class="btn">About me</a>
+                        <a href="../pages/about.html" class="btn">Over mij</a>
                     </li>
                     <li>
-                        <a href="projects.html" class="btn active">Projects</a>
+                        <a href="projects.php" class="btn active">Projecten</a>
                     </li>
                     <li>
-                        <a href="./contact.php" class="btn">Contact</a>
+                        <a href="../pages/contact.php" class="btn">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -56,19 +61,21 @@ $result = $conn->query($sql);
             <section class="projects">
                 <div class="container-projects">
                 <?php
-            
+
             if ($result->num_rows > 0) {
                 while ($row = $result->fetch_assoc()) {
                     echo '<div class="project">';
                     echo '<img src="' . $row["img"] . '" alt="' . $row["titel"] . '">';
                     echo '<h2>' . $row["titel"] . '</h2>';
                     echo '<p>' . $row["beschrijving"] . '</p>';
-                    echo '<a href="' . $row["link"] . '" target="_blank" >Bezoeken</a>';
+                    echo '<a href="' . $row["link"] . '" target="_blank" >Website</a>';
+                    echo '<a href="' . $row["link2"] . '" target="_blank" >Github</a>';
                     echo '</div>';
                 }
             } else {
                 echo "Geen projecten gevonden.";
             }
+			$conn->close();
             ?>
                 </div>
             </section>
@@ -87,10 +94,10 @@ $result = $conn->query($sql);
             <a href="../index.html">Home</a>
         </li>
         <li>
-            <a href="about.html">About Me</a>
+            <a href="about.html">Over mij</a>
         </li>
         <li>
-            <a href="projects.html">Projects</a>
+            <a href="projects.html">Projecten</a>
         </li>
         <li>
             <a href="./contact.php">Contact</a>

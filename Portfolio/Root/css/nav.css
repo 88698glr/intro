@@ -83,7 +83,7 @@ input[type="checkbox"] {
         gap: 2em;
         top: 50px;
         width: 100%;
-        height: calc(102vh - 60px);
+        height: calc(120vh - 60px);
         transition: 0.5s;
     }
 

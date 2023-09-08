@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,17 +23,17 @@
             </label>
             <ul class="navbar">
                 <li>
-                    <a href="../index.html" class="btn">Home</a>
-                </li>
-                <li>
-                    <a href="../pages/about.html" class="btn">About me</a>
-                </li>
-                <li>
-                    <a href="../pages/projects.php" class="btn">Projects</a>
-                </li>
-                <li>
-                    <a href="contact.php" class="btn active">Contact</a>
-                </li>
+                        <a href="../index.html" class="btn">Home</a>
+                    </li>
+                    <li>
+                        <a href="../pages/about.html" class="btn">Over mij</a>
+                    </li>
+                    <li>
+                        <a href="../pages/projects.php" class="btn">Projecten</a>
+                    </li>
+                    <li>
+                        <a href="contact.php" class="btn active">Contact</a>
+                    </li>
             </ul>
         </nav>
 
@@ -53,7 +53,7 @@
             "\r\n Message: " . $userMessage . "\r\n";
 
             if(mail($toEmail, $userName, $mailHeaders)){
-                $message = "Your Informaiton is Received Successfully.";
+                $message = "Jouw informatie is succesvol gestuurd!";
             }
         }
         ?>
@@ -62,7 +62,7 @@
         <div class="form-container">
             <form method="post" name="emailContact">
                 <div class="input-row">
-                    <label>Name <em>*</em></label>
+                    <label>Naam <em>*</em></label>
                     <input type="text" name="userName" placeholder="Naam" required>
                 </div>
                 <div class="input-row">
@@ -78,13 +78,13 @@
                     <input type="text" name="userCompany" placeholder="Example bv" required>
                 </div>
                 <div class="input-row">
-                    <label>Message <em>*</em></label>
-                    <textarea name="userMessage" placeholder="Hi, ask or say something" required></textarea>
+                    <label>Bericht <em>*</em></label>
+                    <textarea name="userMessage" placeholder="Hi, vraag of zeg iets" required></textarea>
                 </div>
                 <div class="input-row">
-                    <input type="submit" name="send" value="Submit">
+                    <input type="submit" name="send" value="Verstuur">
                     <?php if(!empty($message)){ ?>
-                    <div class="success">
+                    <div class="succes">
                         <strong><?php echo $message; ?></strong>
                     </div>
                     <?php } ?>
@@ -106,10 +106,10 @@
                 <a href="../index.html">Home</a>
             </li>
             <li>
-                <a href="../pages/about.html">About Me</a>
+                <a href="../pages/about.html">Over mij</a>
             </li>
             <li>
-                <a href="./projects.php">Projects</a>
+                <a href="./projects.php">Projecten</a>
             </li>
             <li>
                 <a href="contact.php">Contact</a>
